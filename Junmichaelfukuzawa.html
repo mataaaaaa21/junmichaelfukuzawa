@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Davao Educational Tour | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --bg:#0f172a;
+  --card:#111827;
+  --accent:#38bdf8;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family: "Inter", Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px;
+}
+
+.hero h1{
+  font-size:48px;
+}
+
+.hero span{
+  color:var(--accent);
+}
+
+.hero p{
+  max-width:600px;
+  margin:20px auto;
+  color:var(--muted);
+}
+
+.hero button{
+  margin-top:30px;
+  padding:14px 30px;
+  font-size:16px;
+  background:var(--accent);
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  color:#020617;
+}
+
+/* SECTION */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+/* PROJECTS */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  overflow:hidden;
+  transform:translateY(30px);
+  opacity:0;
+  transition:0.6s ease;
+}
+
+.card.show{
+  transform:translateY(0);
+  opacity:1;
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:22px;
+}
+
+.card h3{
+  margin:0;
+  color:var(--accent);
+}
+
+.card p{
+  color:var(--muted);
+  font-size:15px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  color:var(--muted);
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <h2>JUN MICHAEL <span>C. FUKUZAWA</span></h2>
+    <h1>Davao <span>Educational Tour</span></h1>
+    <p>
+      A professional portfolio showcasing learning experiences,
+      innovation visits, and real-world technology exposure in Davao City.
+    </p>
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+      View Portfolio
+    </button>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Featured Visits</h2>
+
+ <div class="projects">
+
+  <div class="card">
+    <img src="https://calipes-portfolio.netlify.app/picture%201.jpg" alt="">
+    <div class="card-content">
+      <h3>Industry Visit</h3>
+      <p>Students observed professional workflows and real-world systems.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://calipes-portfolio.netlify.app/picture5.jpg" alt="">
+    <div class="card-content">
+      <h3>Technology Demonstration</h3>
+      <p>Hands-on exposure to modern tools and industry technologies.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://calipes-portfolio.netlify.app/picture3.jpg" alt="">
+    <div class="card-content">
+      <h3>Facility Orientation</h3>
+      <p>Orientation on safety procedures and operational standards.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://calipes-portfolio.netlify.app/wq.jpg" alt="">
+    <div class="card-content">
+      <h3>Student Engagement Activity</h3>
+      <p>Collaborative learning and professional interaction.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://calipes-portfolio.netlify.app/picture2.jpg" alt="">
+    <div class="card-content">
+      <h3>PLDT INC / VITRO INC</h3>
+      <p>Telecommunications infrastructure and digital solutions.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://calipes-portfolio.netlify.app/picture13.jpg" alt="">
+    <div class="card-content">
+      <h3>JAIROSOFT INC.</h3>
+      <p>Modern software systems and professional work environments.</p>
+    </div>
+  </div>
+
+   <div class="card">
+    <img src="https://calipes-portfolio.netlify.app/5.jpg" alt="">
+    <div class="card-content">
+      <h3>JAIROSOFT INC.</h3>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://calipes-portfolio.netlify.app/picture12.jpg" alt="">
+    <div class="card-content">
+      <h3>JAIROSOFT INC.</h3>
+      
+    </div>
+  </div>
+
+   <div class="card">
+    <img src="https://calipes-portfolio.netlify.app/3.jpg" alt="">
+    <div class="card-content">
+      <h3>JAIROSOFT INC.</h3>
+      
+    </div>
+  </div>
+
+   <div class="card">
+    <img src="https://calipes-portfolio.netlify.app/6.jpg" alt="">
+    <div class="card-content">
+      <h3>JAIROSOFT INC.</h3>
+      
+    </div>
+  </div>
+
+
+  <div class="card">
+    <img src="https://calipes-portfolio.netlify.app/picture15.jpg" alt="">
+    <div class="card-content">
+      <h3>Davao City Emergency Response Center</h3>
+      <p>Real-time communication and disaster response systems.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://calipes-portfolio.netlify.app/picture16.jpg" alt="">
+    <div class="card-content">
+      <h3>Command & Monitoring Area</h3>
+      <p>Live monitoring systems for city-wide operations.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://calipes-portfolio.netlify.app/1.jpg" alt="">
+    <div class="card-content">
+      <h3>Operations Control Room</h3>
+      <p>Centralized systems supporting emergency coordination.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="c:\Users\Jun\Downloads\1363d4d0-c2a2-49e4-a65c-c4dd5a3172cd.jpg" alt="">
+    <div class="card-content">
+      <h3>JOURNAL BOOK</h3>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="c:\Users\Jun\Downloads\578b985c-58a2-4bec-a392-f2d617f29793.jpg" alt="">
+    <div class="card-content">
+        
+    </div>
+  </div>
+
+
+  <div class="card">
+    <img src="c:\Users\Jun\Downloads\5604d676-f00b-42e0-afc1-917341add6f8.jpg" alt="">
+    <div class="card-content">
+       
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="c:\Users\Jun\Downloads\63f767d9-ea75-4e9d-b730-d53d4fb83d37.jpg" alt="">
+    <div class="card-content">
+       
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="c:\Users\Jun\Downloads\2b1906c4-8d55-4bb5-9d49-b5d585547dff.jpg" alt="">
+    <div class="card-content">
+       
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="c:\Users\Jun\Downloads\3318922b-6a0c-42c0-aeff-bb589c5194ac.jpg" alt="">
+    <div class="card-content">
+       
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="c:\Users\Jun\Downloads\676eecae-0def-4180-9341-52d0f049f864.jpg" alt="">
+    <div class="card-content">
+      <h3>Certificate</h3>
+
+    </div>
+  </div>
+
+
+
+
+</div>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 Davao Educational Tour Portfolio
+</footer>
+
+<script>
+/* Scroll animation */
+const cards = document.querySelectorAll('.card');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+},{ threshold:0.2 });
+
+cards.forEach(card => observer.observe(card));
+</script>
+
+</body>
+</html>
